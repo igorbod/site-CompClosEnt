@@ -8,3 +8,46 @@
   font-weight: 400
   span
     color: #1b1b1b !important
+  &_transparent
+    position: relative
+    display: block
+    margin: 0 auto
+    color: #ffffff
+    font-size: 14px
+    font-weight: 500
+    line-height: 14px
+    letter-spacing: 0.35px
+    padding: 13px 20px
+    border: 1px solid $main-color
+    border-right-width: 20px
+    background-color: transparent
+    span
+      position: absolute
+      right: -13px
+      top: 50%
+      transform: translateY(-50%);
+      font-size: 10px
+      font-weight: 300
+      color: #ffffff
+  &__next,
+  &__prev
+    position: absolute
+    display: block
+    top: 50%
+    transform: translateY(-50%)
+    width: 40px
+    height: 40px
+    background-color: transparent
+    border: 1px solid #ffffff
+    color: #ffffff
+    z-index: 2
+    span
+      font-size: 8px
+      font-weight: 300
+      line-height: 40px
+      vertical-align: middle
+      color: #ffffff
+    &:hover
+      background-color: $main-color
+  &__next
+    right: 0
