@@ -53,6 +53,21 @@
       background-color: $main-color
   &__next
     right: 0
+  &__prev, &__next
+    &_news
+      top: calc(100% + 35px)
+      right: -16px
+      transform: translateX(-50%)
+      border: 1px solid #dadada
+      span
+        color: #908e8e
+    &:hover
+      span
+        color: #ffffff
+  &__prev
+    &_news
+      right: 40px
+      
   
   &_header
     margin-left: auto
