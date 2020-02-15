@@ -1,8 +1,29 @@
-// @media (max-width: 1200px)
+@media (max-width: 1200px)
+  .section-header
+    padding: 0 15px
+    margin-bottom: 25px
+  .services
+    &-items__wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &-item
+      margin: 20px 25px 
 
-// @media (max-width: 991px)
+
+@media (max-width: 991px)
+  .section
+    &-header
+      &__text
+        margin-right: 10px
+  .button
+    &_header
+      padding: 12px 10px
 
 @media (max-width: 767px)
+  .button
+    &_header
+      font-size: 12px
+  
   .header
     &__contacts
       margin: 0 auto
@@ -32,6 +53,22 @@
     
 
 @media (max-width: 575px)
+  section
+    .section
+      &-header
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        &__text
+        &__line
+          display: none
+  .button
+    &_header
+      line-height: 18px
+      margin-left: unset
+      margin-top: 20px
+  
   .header
     &__contacts
       display: none
@@ -101,3 +138,19 @@
       font-size: 20px
     &__descr
       font-size: 13px
+
+  .services
+    &-item
+      padding: 24px 8px 40px 8px
+      justify-content: space-around
+      &__content
+        margin-bottom: 15px
+      &__title
+        line-height: 20px
+        margin-bottom: 20px
+      &__descr
+        font-size: 13px
+      &__more
+        margin-right: 0
+        display: block
+        margin-bottom: 20px
